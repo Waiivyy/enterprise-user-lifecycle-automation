@@ -1,0 +1,55 @@
+{
+  "tools": {
+    "Slack": {
+      "enabled": true,
+      "provisioning_action": "create_member",
+      "deprovisioning_action": "deactivate_member",
+      "access_by_department": {
+        "Engineering": "engineering-workspace",
+        "IT": "it-operations",
+        "Finance": "finance-standard",
+        "People": "people-operations",
+        "Sales": "sales-standard"
+      }
+    },
+    "Box": {
+      "enabled": true,
+      "provisioning_action": "create_managed_user",
+      "deprovisioning_action": "transfer_and_deactivate",
+      "access_by_department": {
+        "Engineering": "standard-collaboration",
+        "Finance": "finance-controlled",
+        "People": "hr-controlled"
+      }
+    },
+    "Zoom": {
+      "enabled": true,
+      "provisioning_action": "create_basic_user",
+      "deprovisioning_action": "deactivate_user",
+      "access_by_department": {
+        "Sales": "licensed-host",
+        "People": "licensed-host"
+      }
+    },
+    "Notion": {
+      "enabled": true,
+      "provisioning_action": "invite_member",
+      "deprovisioning_action": "remove_member",
+      "access_by_department": {
+        "Engineering": "engineering-teamspace",
+        "IT": "it-runbooks",
+        "People": "people-teamspace"
+      }
+    },
+    "Snipe-IT": {
+      "enabled": true,
+      "provisioning_action": "create_asset_user",
+      "deprovisioning_action": "mark_assets_for_return",
+      "access_by_department": {
+        "Engineering": "hardware-eligible",
+        "IT": "hardware-admin",
+        "Sales": "hardware-eligible"
+      }
+    }
+  }
+}

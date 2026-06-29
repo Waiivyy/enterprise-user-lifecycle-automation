@@ -1,0 +1,15 @@
+{
+  "simulation_mode": true,
+  "tenant_domain": "example.invalid",
+  "report_timezone": "UTC",
+  "default_license": {
+    "sku": "M365_BUSINESS_STANDARD",
+    "display_name": "Microsoft 365 Business Standard",
+    "assignment_reason": "Fallback for unmapped employment types"
+  },
+  "graph": {
+    "base_url": "https://graph.example.invalid/v1.0",
+    "production_execution_enabled": false,
+    "credential_source": "environment_variables_or_managed_identity"
+  }
+}

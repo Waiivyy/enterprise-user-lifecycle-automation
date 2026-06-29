@@ -1,0 +1,46 @@
+{
+  "departments": {
+    "Engineering": [
+      "group-start2-engineering",
+      "group-start2-github-engineering"
+    ],
+    "IT": [
+      "group-start2-it-operations",
+      "group-start2-device-admins"
+    ],
+    "Finance": [
+      "group-start2-finance"
+    ],
+    "People": [
+      "group-start2-people"
+    ],
+    "Sales": [
+      "group-start2-sales"
+    ]
+  },
+  "regions": {
+    "Europe": [
+      "group-start2-europe"
+    ],
+    "North America": [
+      "group-start2-north-america"
+    ],
+    "APAC": [
+      "group-start2-apac"
+    ]
+  },
+  "locations": {
+    "Berlin": [
+      "group-start2-office-berlin"
+    ],
+    "London": [
+      "group-start2-office-london"
+    ],
+    "New York": [
+      "group-start2-office-new-york"
+    ],
+    "Remote": [
+      "group-start2-remote-workforce"
+    ]
+  }
+}

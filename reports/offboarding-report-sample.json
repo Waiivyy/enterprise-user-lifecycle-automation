@@ -1,0 +1,157 @@
+{
+  "generated_at": "2026-06-29T19:47:09+00:00",
+  "graph_actions": [
+    {
+      "endpoint": "/users/priya.shah@example.invalid",
+      "method": "PATCH",
+      "payload": {
+        "accountEnabled": false
+      },
+      "simulation": true,
+      "status": "mocked"
+    },
+    {
+      "endpoint": "/users/priya.shah@example.invalid/revokeSignInSessions",
+      "method": "POST",
+      "payload": {},
+      "simulation": true,
+      "status": "mocked"
+    },
+    {
+      "endpoint": "/users/priya.shah@example.invalid/assignLicense",
+      "method": "POST",
+      "payload": {
+        "addLicenses": [],
+        "removeLicenses": [
+          "M365_BUSINESS_PREMIUM"
+        ]
+      },
+      "simulation": true,
+      "status": "mocked"
+    },
+    {
+      "endpoint": "/groups/group-start2-engineering/members/priya.shah@example.invalid/$ref",
+      "method": "DELETE",
+      "payload": {},
+      "simulation": true,
+      "status": "mocked"
+    },
+    {
+      "endpoint": "/groups/group-start2-github-engineering/members/priya.shah@example.invalid/$ref",
+      "method": "DELETE",
+      "payload": {},
+      "simulation": true,
+      "status": "mocked"
+    },
+    {
+      "endpoint": "/groups/group-start2-europe/members/priya.shah@example.invalid/$ref",
+      "method": "DELETE",
+      "payload": {},
+      "simulation": true,
+      "status": "mocked"
+    },
+    {
+      "endpoint": "/groups/group-start2-office-berlin/members/priya.shah@example.invalid/$ref",
+      "method": "DELETE",
+      "payload": {},
+      "simulation": true,
+      "status": "mocked"
+    }
+  ],
+  "groups": [
+    "group-start2-engineering",
+    "group-start2-github-engineering",
+    "group-start2-europe",
+    "group-start2-office-berlin"
+  ],
+  "licenses": [
+    {
+      "action": "remove",
+      "sku": "M365_BUSINESS_PREMIUM"
+    }
+  ],
+  "mailbox": {
+    "forwarding": "Review business requirement before enabling forwarding.",
+    "recommended_delegate": "Alex Morgan",
+    "retention": "Apply legal hold or retention policy only when approved."
+  },
+  "recommendations": [
+    "Confirm mailbox delegation or forwarding with manager Alex Morgan.",
+    "Export required audit metadata before deleting or purging any account data.",
+    "Review offboarding actions with the ticket owner before production execution."
+  ],
+  "simulation_mode": true,
+  "subject": {
+    "last_working_day": "2026-12-31",
+    "manager": "Alex Morgan",
+    "offboarding_type": "Voluntary",
+    "ticket_id": "ITSM-1001",
+    "work_email": "priya.shah@example.invalid"
+  },
+  "summary": [
+    "Validated offboarding record",
+    "Prepared sign-in disablement",
+    "Prepared session revocation",
+    "Listed licenses and groups for removal",
+    "Generated SaaS deprovisioning payloads from configuration",
+    "Prepared Microsoft Graph actions in simulation mode"
+  ],
+  "tool_payloads": [
+    {
+      "action": "deactivate_member",
+      "payload": {
+        "email": "priya.shah@example.invalid",
+        "lastWorkingDay": "2026-12-31",
+        "manager": "Alex Morgan",
+        "offboardingType": "Voluntary",
+        "ticketId": "ITSM-1001"
+      },
+      "tool": "Slack"
+    },
+    {
+      "action": "transfer_and_deactivate",
+      "payload": {
+        "email": "priya.shah@example.invalid",
+        "lastWorkingDay": "2026-12-31",
+        "manager": "Alex Morgan",
+        "offboardingType": "Voluntary",
+        "ticketId": "ITSM-1001"
+      },
+      "tool": "Box"
+    },
+    {
+      "action": "deactivate_user",
+      "payload": {
+        "email": "priya.shah@example.invalid",
+        "lastWorkingDay": "2026-12-31",
+        "manager": "Alex Morgan",
+        "offboardingType": "Voluntary",
+        "ticketId": "ITSM-1001"
+      },
+      "tool": "Zoom"
+    },
+    {
+      "action": "remove_member",
+      "payload": {
+        "email": "priya.shah@example.invalid",
+        "lastWorkingDay": "2026-12-31",
+        "manager": "Alex Morgan",
+        "offboardingType": "Voluntary",
+        "ticketId": "ITSM-1001"
+      },
+      "tool": "Notion"
+    },
+    {
+      "action": "mark_assets_for_return",
+      "payload": {
+        "email": "priya.shah@example.invalid",
+        "lastWorkingDay": "2026-12-31",
+        "manager": "Alex Morgan",
+        "offboardingType": "Voluntary",
+        "ticketId": "ITSM-1001"
+      },
+      "tool": "Snipe-IT"
+    }
+  ],
+  "workflow": "offboarding"
+}

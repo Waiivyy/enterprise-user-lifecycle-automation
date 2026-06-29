@@ -1,0 +1,33 @@
+{
+  "users": {
+    "priya.shah@example.invalid": {
+      "id": "mock-user-priya-shah",
+      "displayName": "Priya Shah",
+      "userPrincipalName": "priya.shah@example.invalid",
+      "accountEnabled": true,
+      "assignedLicenses": [
+        "M365_BUSINESS_PREMIUM"
+      ],
+      "memberOf": [
+        "group-start2-engineering",
+        "group-start2-github-engineering",
+        "group-start2-europe",
+        "group-start2-office-berlin"
+      ]
+    },
+    "jordan.lee@example.invalid": {
+      "id": "mock-user-jordan-lee",
+      "displayName": "Jordan Lee",
+      "userPrincipalName": "jordan.lee@example.invalid",
+      "accountEnabled": true,
+      "assignedLicenses": [
+        "M365_BUSINESS_PREMIUM"
+      ],
+      "memberOf": [
+        "group-start2-sales",
+        "group-start2-north-america",
+        "group-start2-office-new-york"
+      ]
+    }
+  }
+}

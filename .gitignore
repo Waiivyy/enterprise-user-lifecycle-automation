@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# PowerShell
+*.ps1xml
+*.psm1~
+
+# OS and editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Secrets and environment files
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+secrets/
+local.settings.json
+
+# Generated reports
+reports/*.md
+!reports/*sample.md
+reports/*.json
+!reports/*sample.json
+reports/*.html
