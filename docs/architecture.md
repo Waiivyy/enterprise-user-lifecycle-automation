@@ -28,6 +28,11 @@ Input CSV or JSON
   -> write Markdown and JSON reports
 ```
 
+Visual versions of this flow are available in:
+
+- [Mermaid architecture diagram](../assets/architecture-diagram.md)
+- [SVG architecture diagram](../assets/architecture-diagram.svg)
+
 ## Configuration Driven Design
 
 The workflow is intentionally driven by configuration files in `config/`:

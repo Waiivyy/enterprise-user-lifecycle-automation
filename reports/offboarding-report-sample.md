@@ -1,7 +1,7 @@
 # Offboarding Report - priya.shah@example.invalid
 
 **Execution mode:** Simulation
-**Generated at:** 2026-06-29T19:47:09+00:00
+**Generated at:** 2026-06-30T13:57:32+00:00
 
 > This report is generated from mock data and is safe for public demo repositories.
 

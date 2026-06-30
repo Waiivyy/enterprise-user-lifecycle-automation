@@ -9,6 +9,33 @@ Configuration-driven employee onboarding and offboarding automation demo for Mic
 
 This is a portfolio project, not a production system. It uses mock users, fake group IDs, example domains, simulated Graph responses, and generated reports to show how an enterprise lifecycle automation workflow can be designed safely.
 
+## Quick Demo
+
+Run the sample workflows locally with Python. No external packages, Microsoft tenant, or Graph credentials are required.
+
+```bash
+python3 scripts/python/lifecycle_cli.py onboard --input data/sample-users.csv
+python3 scripts/python/lifecycle_cli.py offboard --input data/sample-offboarding.csv
+```
+
+Compact output:
+
+```text
+Workflow: onboarding
+Subject: Priya Shah <priya.shah@example.invalid>
+Mode: simulation
+Groups: 4
+SaaS payloads: 5
+
+Workflow: offboarding
+Subject: priya.shah@example.invalid <priya.shah@example.invalid>
+Mode: simulation
+Groups: 4
+SaaS payloads: 5
+```
+
+Generated reports are written to `reports/` as Markdown and JSON.
+
 ## What This Demonstrates
 
 Enterprise user lifecycle work touches identity, licensing, SaaS access, audit evidence, and operational safety. This repository models those concerns as a small automation toolkit:
@@ -22,7 +49,11 @@ Enterprise user lifecycle work touches identity, licensing, SaaS access, audit e
 - Produce Markdown and JSON reports for review and audit handoff.
 - Keep production execution intentionally disabled.
 
-The result is meant to be credible for an IT Automation, Cloud Automation, Identity, or Enterprise AI engineering portfolio without implying that it is ready to run against a real tenant.
+The result is meant to be credible for an enterprise automation, Microsoft 365 automation, identity lifecycle automation, or cloud automation engineering portfolio without implying that it is ready to run against a real tenant.
+
+Suggested GitHub repository description:
+
+> Portfolio demo for Microsoft 365 identity lifecycle automation using Python, PowerShell, mock Microsoft Graph workflows, configuration-driven access mapping, reports, and CI.
 
 ## What It Does Not Claim
 
@@ -33,6 +64,8 @@ The result is meant to be credible for an IT Automation, Cloud Automation, Ident
 - It is not production-ready.
 
 ## Architecture
+
+![Architecture diagram](assets/architecture-diagram.svg)
 
 ```text
 CSV or JSON input
@@ -47,6 +80,7 @@ CSV or JSON input
 
 | Layer | Responsibility |
 | --- | --- |
+| `assets/` | Architecture diagrams, demo output, and LinkedIn Featured copy. |
 | `config/` | Public-safe example mappings for groups, licenses, tools, and settings. |
 | `data/` | Sample lifecycle inputs and mock Microsoft Graph response data. |
 | `src/lifecycle/` | Python package for validation, configuration, workflow planning, mock Graph actions, SaaS payloads, and reports. |
@@ -67,6 +101,7 @@ Start here if you are reviewing this as a portfolio project:
 - [src/lifecycle/graph_client_mock.py](src/lifecycle/graph_client_mock.py) shows the Microsoft Graph simulation boundary.
 - [config/department-group-map.example.json](config/department-group-map.example.json) shows configuration-driven group mapping.
 - [reports/onboarding-report-sample.md](reports/onboarding-report-sample.md) and [reports/offboarding-report-sample.md](reports/offboarding-report-sample.md) show audit-style output.
+- [assets/architecture-diagram.md](assets/architecture-diagram.md) and [assets/architecture-diagram.svg](assets/architecture-diagram.svg) provide visual proof for GitHub and LinkedIn.
 - [docs/security-considerations.md](docs/security-considerations.md) documents the safety model and production hardening considerations.
 
 ## Features
@@ -162,11 +197,15 @@ See [SECURITY.md](SECURITY.md) and [docs/security-considerations.md](docs/securi
 - [Offboarding flow](docs/offboarding-flow.md)
 - [Security considerations](docs/security-considerations.md)
 - [Recruiter review guide](docs/recruiter-review-guide.md)
+- [Roadmap issue ideas](docs/roadmap-issues.md)
 - [Screenshots and sample outputs](docs/screenshots.md)
+- [Architecture diagram](assets/architecture-diagram.md)
+- [Demo output](assets/demo-output.md)
+- [LinkedIn Featured description](assets/linkedin-featured-description.md)
 
 ## Roadmap
 
-Reasonable next steps for a lab environment:
+Reasonable next steps for a lab environment are tracked in [docs/roadmap-issues.md](docs/roadmap-issues.md):
 
 - Add an optional FastAPI wrapper for demo workflow requests.
 - Add Azure Functions-style HTTP or queue trigger folders while preserving local execution.
