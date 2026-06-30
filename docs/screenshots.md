@@ -1,6 +1,6 @@
 # Screenshots and Sample Outputs
 
-This repository is CLI-first, so the strongest portfolio visuals are terminal output, generated reports, and the architecture diagram.
+This repository is CLI-first, so the strongest technical visuals are terminal output, generated reports, and the architecture diagram.
 
 ## Generate Demo Outputs Locally
 
@@ -58,7 +58,7 @@ JSON report: reports/offboarding-report-01-priya-shah-at-example-invalid.json
 - group-start2-office-berlin
 ```
 
-## Suggested Screenshots For LinkedIn Featured
+## Suggested Screenshots For Project Review
 
 Capture these visuals:
 
@@ -73,4 +73,4 @@ Capture these visuals:
 - [Mermaid architecture diagram](../assets/architecture-diagram.md)
 - [SVG architecture diagram](../assets/architecture-diagram.svg)
 - [Demo terminal output](../assets/demo-output.md)
-- [LinkedIn Featured description](../assets/linkedin-featured-description.md)
+- [Project summary](../assets/project-summary.md)

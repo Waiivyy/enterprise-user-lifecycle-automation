@@ -45,7 +45,7 @@ Add checks that detect risky or inconsistent mapping rules.
 
 ## Add Sample GitHub Pages Project Site
 
-Create a lightweight GitHub Pages site for portfolio viewing.
+Create a lightweight GitHub Pages site for technical review.
 
 - Include architecture diagram, sample terminal output, and links to reports.
 - Keep the site static.

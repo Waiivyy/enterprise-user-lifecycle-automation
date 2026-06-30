@@ -1,4 +1,4 @@
-# Recruiter Review Guide
+# Technical Review Guide
 
 This project is designed to show practical enterprise automation judgment without claiming production readiness.
 
@@ -37,7 +37,7 @@ It demonstrates:
 
 ## Why Simulation Mode Is Intentional
 
-Identity lifecycle automation can disable access, remove licenses, change group membership, and trigger SaaS deprovisioning. A public portfolio project should demonstrate design, validation, reporting, and safety boundaries without performing real tenant changes.
+Identity lifecycle automation can disable access, remove licenses, change group membership, and trigger SaaS deprovisioning. A public lab project should demonstrate design, validation, reporting, and safety boundaries without performing real tenant changes.
 
 Simulation mode makes the workflow reviewable while keeping the repository safe to clone, run, and inspect.
 
@@ -52,7 +52,7 @@ Simulation mode makes the workflow reviewable while keeping the repository safe 
 | Test coverage | `tests/` |
 | Reporting output | `reports/*sample*` |
 | Security posture | `SECURITY.md` and `docs/security-considerations.md` |
-| Visual portfolio assets | `assets/` |
+| Visual project assets | `assets/` |
 
 ## What This Project Is Not
 

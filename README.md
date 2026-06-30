@@ -5,9 +5,9 @@
 ![Mode](https://img.shields.io/badge/default-simulation%20mode-green)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-Configuration-driven employee onboarding and offboarding automation demo for Microsoft 365, Microsoft Entra ID, Microsoft Graph-style workflows, PowerShell, and Python.
+Simulation-first Microsoft 365 identity lifecycle automation lab for planning onboarding and offboarding workflows with Python, PowerShell, mock Microsoft Graph actions, JSON configuration, reports, and CI.
 
-This is a portfolio project, not a production system. It uses mock users, fake group IDs, example domains, simulated Graph responses, and generated reports to show how an enterprise lifecycle automation workflow can be designed safely.
+This is a simulation-first lab project, not a production system. It uses mock users, fake group IDs, example domains, simulated Graph responses, and generated reports to show how an enterprise lifecycle automation workflow can be designed safely.
 
 ## Quick Demo
 
@@ -49,11 +49,7 @@ Enterprise user lifecycle work touches identity, licensing, SaaS access, audit e
 - Produce Markdown and JSON reports for review and audit handoff.
 - Keep production execution intentionally disabled.
 
-The result is meant to be credible for an enterprise automation, Microsoft 365 automation, identity lifecycle automation, or cloud automation engineering portfolio without implying that it is ready to run against a real tenant.
-
-Suggested GitHub repository description:
-
-> Portfolio demo for Microsoft 365 identity lifecycle automation using Python, PowerShell, mock Microsoft Graph workflows, configuration-driven access mapping, reports, and CI.
+The result is a technical demo for enterprise automation, Microsoft 365 automation, identity lifecycle automation, and cloud automation review without implying that it is ready to run against a real tenant.
 
 ## What It Does Not Claim
 
@@ -80,7 +76,7 @@ CSV or JSON input
 
 | Layer | Responsibility |
 | --- | --- |
-| `assets/` | Architecture diagrams, demo output, and LinkedIn Featured copy. |
+| `assets/` | Architecture diagrams, demo output, and a concise project summary. |
 | `config/` | Public-safe example mappings for groups, licenses, tools, and settings. |
 | `data/` | Sample lifecycle inputs and mock Microsoft Graph response data. |
 | `src/lifecycle/` | Python package for validation, configuration, workflow planning, mock Graph actions, SaaS payloads, and reports. |
@@ -93,7 +89,7 @@ See [docs/architecture.md](docs/architecture.md) for more detail.
 
 ## Repository Tour
 
-Start here if you are reviewing this as a portfolio project:
+Start here if you are reviewing the implementation:
 
 - [src/lifecycle/onboarding.py](src/lifecycle/onboarding.py) shows the onboarding workflow plan.
 - [src/lifecycle/offboarding.py](src/lifecycle/offboarding.py) shows the offboarding workflow plan.
@@ -101,7 +97,7 @@ Start here if you are reviewing this as a portfolio project:
 - [src/lifecycle/graph_client_mock.py](src/lifecycle/graph_client_mock.py) shows the Microsoft Graph simulation boundary.
 - [config/department-group-map.example.json](config/department-group-map.example.json) shows configuration-driven group mapping.
 - [reports/onboarding-report-sample.md](reports/onboarding-report-sample.md) and [reports/offboarding-report-sample.md](reports/offboarding-report-sample.md) show audit-style output.
-- [assets/architecture-diagram.md](assets/architecture-diagram.md) and [assets/architecture-diagram.svg](assets/architecture-diagram.svg) provide visual proof for GitHub and LinkedIn.
+- [assets/architecture-diagram.md](assets/architecture-diagram.md) and [assets/architecture-diagram.svg](assets/architecture-diagram.svg) provide a visual workflow overview.
 - [docs/security-considerations.md](docs/security-considerations.md) documents the safety model and production hardening considerations.
 
 ## Features
@@ -196,12 +192,12 @@ See [SECURITY.md](SECURITY.md) and [docs/security-considerations.md](docs/securi
 - [Onboarding flow](docs/onboarding-flow.md)
 - [Offboarding flow](docs/offboarding-flow.md)
 - [Security considerations](docs/security-considerations.md)
-- [Recruiter review guide](docs/recruiter-review-guide.md)
+- [Technical review guide](docs/technical-review-guide.md)
 - [Roadmap issue ideas](docs/roadmap-issues.md)
 - [Screenshots and sample outputs](docs/screenshots.md)
 - [Architecture diagram](assets/architecture-diagram.md)
 - [Demo output](assets/demo-output.md)
-- [LinkedIn Featured description](assets/linkedin-featured-description.md)
+- [Project summary](assets/project-summary.md)
 
 ## Roadmap
 

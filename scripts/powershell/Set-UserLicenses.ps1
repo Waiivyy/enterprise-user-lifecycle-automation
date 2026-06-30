@@ -27,7 +27,7 @@ param(
 )
 
 if ($ProductionMode) {
-    throw "ProductionMode is intentionally disabled. This portfolio project supports simulation only."
+    throw "ProductionMode is intentionally disabled. This public lab project supports simulation only."
 }
 
 $licenseMap = Get-Content -Path (Join-Path $ConfigDirectory "license-map.example.json") -Raw | ConvertFrom-Json
